@@ -22,7 +22,6 @@
         - počet opakování celého benchmarku (pokud je vyšší než 1, výsledky jsou zprůměrovány)
         - barevná schémata pro generování grafů
         - **parametry měření** (počet requestů, concurrency)
-            - pro každý parametr 
 - **Upozornění:** výsledky benchmarku se mohou lišit v závislosti na hardware počítače, aktuálního vytížení systémových prostředků atd.
 
 ## Sestavení a spuštění prostředí
