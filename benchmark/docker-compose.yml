@@ -1,0 +1,139 @@
+version: '3.7'
+
+services:
+  workerman:
+    build:
+      context: ./workerman
+    networks:
+      - network
+    ports:
+        - 8012:80
+    container_name: "workerman"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  swow:
+    build:
+      context: ./swow
+    networks:
+      - network
+    ports:
+        - 8011:80
+    container_name: "swow"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  frankenphp:
+    build:
+      context: ./frankenphp
+    ports:
+      - "8010:80"
+    networks:
+      - network
+    container_name: "frankenphp"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  amphp:
+    build:
+      context: ./amphp
+    ports:
+      - "8009:80"
+    networks:
+      - network
+    container_name: "amphp"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  roadrunner:
+    build:
+      context: ./roadrunner
+    ports:
+      - "8008:80"
+    networks:
+      - network
+    container_name: "roadrunner"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  swoole:
+    build:
+      context: ./swoole
+    ports:
+      - "8007:80"
+    volumes:
+      - ./swoole/src:/var/www/html
+    networks:
+      - network
+    container_name: "swoole"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  golang:
+    build:
+      context: ./golang
+    ports:
+      - "8006:80"
+    networks:
+      - network
+    container_name: "golang"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  reactphp:
+    build:
+      context: ./reactphp
+    ports:
+      - "8005:80"
+    networks:
+      - network
+    container_name: "reactphp"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  nodejs:
+    build:
+      context: ./nodejs
+    ports:
+      - "8003:80"
+    networks:
+      - network
+    container_name: "nodejs"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  python:
+    build:
+      context: ./python
+    ports:
+      - "8002:80"
+    networks:
+      - network
+    container_name: "python"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  openswoole:
+    build:
+      context: ./openswoole
+    ports:
+      - "8001:80"
+    networks:
+      - network
+    container_name: "openswoole"
+    cpus: 0.8
+    mem_limit: "200M"
+
+  benchmark:
+    stdin_open: true
+    tty: true 
+    build:
+      context: ./benchmark_master
+    volumes:
+      - ./benchmark_master:/app
+    networks:
+      - network
+    container_name: "benchmark_master"
+
+networks:
+  network:

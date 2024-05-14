@@ -1,0 +1,79 @@
+{
+    "wholeTestRepeats": 1,
+    "services": [
+        {
+            "name": "openswoole",
+            "port": 8001,
+            "color_warm": "GoldenRod",
+            "color_cold": "Turquoise"
+        }, {
+            "name": "python",
+            "port": 8002,
+            "color_warm": "Gold",
+            "color_cold": "MediumSeaGreen"
+        }, {
+            "name": "nodejs",
+            "port": 8003,
+            "color_warm": "Orange",
+            "color_cold": "Green"
+        }, {
+            "name": "reactphp",
+            "port": 8005,
+            "color_warm": "LightSalmon",
+            "color_cold": "SapphireBlue"
+        }, {
+            "name": "golang",
+            "port": 8006,
+            "color_warm": "Brown",
+            "color_cold": "DarkCyan"
+        }, {
+            "name": "swoole",
+            "port": 8007,
+            "color_warm": "OrangeRed",
+            "color_cold": "RoyalBlue"
+        }, {
+            "name": "roadrunner",
+            "port": 8008,
+            "color_warm": "RosyBrown",
+            "color_cold": "Blue"
+        }, {
+            "name": "amphp",
+            "port": 8009,
+            "color_warm": "Brown",
+            "color_cold": "Blue"
+        }, {
+            "name": "frankenphp",
+            "port": 8010,
+            "color_warm": "SandyBrown",
+            "color_cold": "Blue"
+        }, {
+            "name": "swow",
+            "port": 8011,
+            "color_warm": "Orange",
+            "color_cold": "Blue"
+        }, {
+            "name": "workerman",
+            "port": 8012,
+            "color_warm": "Wheat",
+            "color_cold": "Blue"
+        }
+    ],
+    "parameters": [
+        {
+            "concurrency": 1,
+            "count": 20000
+        }, {
+            "concurrency": 10,
+            "count": 20000
+        }, {
+            "concurrency": 200,
+            "count": 20000
+        }, {
+            "concurrency": 500,
+            "count": 20000
+        }, {
+            "concurrency": 1000,
+            "count": 20000
+        }
+    ]
+}

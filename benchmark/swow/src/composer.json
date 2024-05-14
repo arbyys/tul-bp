@@ -1,0 +1,6 @@
+{
+    "require": {
+        "swow/swow": "^1.2.0",
+        "swow/swow-library": "^1.4.0"
+    }
+}
