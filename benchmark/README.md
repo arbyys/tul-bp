@@ -67,7 +67,7 @@ python visualise.py
 - lze specifikovat barevné schéma grafů, defaultní je `color_warm`
 - lze voláním také smazat staré vygenerované grafy, pomocí boolean parametru `clear_graphs`, defaultní je False
 ___
-- **Příklad** - Vizualizace výsledku dvou PHP technologií s barevným schématem `color_cold`
+- **Příklad** - Vizualizace výsledku Swoole a OpenSwoole s barevným schématem `color_cold`
 ```bash
 python visualise.py --service swoole --service openswoole --color-scheme="color_cold"
 ```
