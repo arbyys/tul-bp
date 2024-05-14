@@ -13,7 +13,7 @@ Aplikace je dostupná (na dobu neurčitou) na adrese https://bitcoin.arbystools.
 1) Přesunout se do adresáře aplikace
 2) Zkopírovat soubor `.env.example` jako nový soubor `.env`
     - konfiguraci lze případně upravit dle potřeby (může způsobit neočekávané chování aplikace)
-3) Spustit následující příkaz, který nainstaluje composer závislosti a zpřístupní Sail příkazy (pomocí dočasného Docker kontejneru)
+3) Spustit následující příkaz, který zpřístupní Sail (instalací z Composeru pomocí dočasného Docker kontejneru)
 ```
 docker run --rm \
     -u "$(id -u):$(id -g)" \
